@@ -1,0 +1,24 @@
+{
+  "name": "checkit-12hyeon",
+  "version": "1.0.0",
+  "description": "Node.js with express 기반으로 비대면 진료 앱 클론 서버 만들기",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/12hyeon/checkit-12hyeon.git"
+  },
+  "author": "hyeonjeong",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/12hyeon/checkit-12hyeon/issues"
+  },
+  "homepage": "https://github.com/12hyeon/checkit-12hyeon#readme",
+  "dependencies": {
+    "body-parser": "^1.20.0",
+    "express": "^4.18.1",
+    "request": "^2.88.2"
+  }
+}
