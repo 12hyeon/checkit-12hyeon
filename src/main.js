@@ -6,6 +6,9 @@ const cookieParser = require('cookie-parser');
 const logger = require('morgan');
 const app = express();
 
+var userRouter = require('./routes/user');
+app.use('/user', userRouter);
+
 const port = 3000
 mongoose.connect(process.env.mongodb_srv).then(()=>{
   console.log('MongoDB Connected...');

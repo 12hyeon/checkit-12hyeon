@@ -4,6 +4,10 @@
   "description": "Node.js with express 기반으로 비대면 진료 앱 클론 서버 만들기",
   "main": "index.js",
   "scripts": {
+    "build": "tsc",
+    "dev": "ts-node ./lib/server.ts",
+    "start": "nodemon ./dist/server.js",
+    "prod": "npm run build && npm run start",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -17,8 +21,15 @@
   },
   "homepage": "https://github.com/12hyeon/checkit-12hyeon#readme",
   "dependencies": {
+    "@types/express": "^4.17.13",
     "body-parser": "^1.20.0",
+    "cookie-parser": "^1.4.6",
     "express": "^4.18.1",
-    "request": "^2.88.2"
+    "request": "^2.88.2",
+    "typescript": "^4.8.2"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.19",
+    "ts-node": "^10.9.1"
   }
 }
