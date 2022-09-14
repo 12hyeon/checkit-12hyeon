@@ -45,7 +45,7 @@ app.use(function(err, req, res, next) {
 
 const mongoose=require('mongoose');
 mongoose.connect
-('mongodb+srv://user:1234@checkit.mydpwcy.mongodb.net/test')
+('mongodb+srv://id:pw@checkit.mydpwcy.mongodb.net/test')
 .then(()=>{
     console.log('MongoDB Connected...');
 }).catch((err)=>{
