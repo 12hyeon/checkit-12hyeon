@@ -4,8 +4,8 @@ import * as mongoose from "mongoose";
 var userRouter = require('./routes/user');
 app.use('/user', userRouter);
 
-const port = 3000;
-mongoose.connect(process.env.mongodb_srv).then(()=>{
+const port = process.env.PORT
+mongoose.connect(process.env.MONGODB).then(()=>{
   console.log('MongoDB Connected...');
 }).catch((err)=>{
   console.log(err);
