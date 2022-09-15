@@ -6,11 +6,11 @@
         "sourceMap": true, 
         "target": "es6", 
         "outDir" : "./dist", 
-        "baseUrl": "./lib" 
+        "baseUrl": "test2" 
     }, 
     "include": [ 
-        "lib/**/*.ts" 
-, "lib/server.js"    ], 
+        "test2/**/*.ts" 
+, "test2/server.js"    ], 
     "exclude": [ 
         "node_modules" 
     ] 
