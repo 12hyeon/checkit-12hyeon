@@ -45,7 +45,7 @@ app.use(function(err, req, res, next) {
 
 const mongoose=require('mongoose');
 mongoose.connect
-('mongodb+srv://id:pw@checkit.mydpwcy.mongodb.net/test') // 보호
+('mongodb+srv://') // 보호
 .then(()=>{
     console.log('MongoDB Connected...');
 }).catch((err)=>{
